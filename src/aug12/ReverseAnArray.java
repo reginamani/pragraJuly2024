@@ -4,12 +4,14 @@ public class ReverseAnArray {
 
     public static void main(String[] args) {
 
-        int[] givenArray = {112,12,32,32,};
-        reverseArray(givenArray);
+        int[] givenArray = {10,20,30,40,50};
+        System.out.println("Original array: ");
+        printArray(givenArray);
 
-        for (int element: givenArray) {
-            System.out.print(element + " ");
-        }
+        reverseArray(givenArray);
+        System.out.println("reversed array: ");
+        printArray(givenArray);
+
     }
 
     public static void reverseArray(int[] arr){
@@ -32,6 +34,13 @@ public class ReverseAnArray {
             start ++;
             end --;
         }
+    }
+
+    public static void printArray(int[] array){
+        for (int i: array) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
     }
 }
 // int max = 0;
